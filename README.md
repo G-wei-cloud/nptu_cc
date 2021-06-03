@@ -11,3 +11,9 @@ $ docker-compose up -d
 ```sh
 $ docker-compose down
 ```
+
+### Access a running conto=ainer
+
+```sh
+$ docker-compose exer $SERVICE_NAME bash
+```
