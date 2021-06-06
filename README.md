@@ -1,4 +1,4 @@
-#### git github
+## git github
 ### Use git clone this program:
 ```sh
 # git clone https://github.com/G-wei-cloud/nptu_cc 
@@ -19,7 +19,7 @@
 # git push
 ```
 
-#### docker
+## docker
 ### Start service:
 ```sh
 $ docker-compose up -d
