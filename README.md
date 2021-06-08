@@ -1,4 +1,9 @@
 ## git github
+### install git:
+```sh
+$ sudo apt-get install git
+```
+
 ### Use git clone this program:
 ```sh
 # git clone https://github.com/G-wei-cloud/nptu_cc 
@@ -12,6 +17,11 @@
 ### add index on file:
 ```sh
 # git add <file name>
+```
+
+### git commit:
+```sh
+# git commit -m 'add commit'
 ```
 
 ### upload file:
