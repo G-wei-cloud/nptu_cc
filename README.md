@@ -45,11 +45,6 @@ $ docker-compose restart
 $ docker ps or $ docker ps -a
 ```
 
-### check all :
-```sh
-$ docker-compose up -d
-```
-
 ### Stop service:
 ```sh
 $ docker-compose down
