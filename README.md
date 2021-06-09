@@ -45,6 +45,11 @@ $ docker-compose restart
 $ docker ps or $ docker ps -a
 ```
 
+### stop container:
+```sh
+$ docker stop insert-mongodb
+```
+
 ### Stop service:
 ```sh
 $ docker-compose down
