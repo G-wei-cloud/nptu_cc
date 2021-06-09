@@ -20,12 +20,14 @@ logging.basicConfig(format='%(asctime)s %(message)s', level=logging.INFO)
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 
 # create user restful API
-@app.route('/create_user', methods=['POST'])
+@app.route('/', methods=['POST'])
 @swag_from('apidocs/api_create_user.yml')
 def create_user():
 
     # retrive post body
     jsonobj = request.get_json(silent=True)
+#    print(json.dumps(jsonobj['username']),flush=True)
+#    print("***********************",flush=True)
     username = json.dumps(jsonobj['username']).replace("\"", "")
     password = json.dumps(jsonobj['password']).replace("\"", "")
 
@@ -64,9 +66,7 @@ def create_user():
 
 
 
-@app.route('/')
-def index():
-    return 'Web App with Python Flask!'
+
 
 
 if __name__ =='__main__':
