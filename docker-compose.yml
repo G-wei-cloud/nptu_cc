@@ -18,12 +18,28 @@ services:
         aliases:
           - rabbitmq
   
+  login:
+    build: login/
+    networks:
+      internal_routes:
+        aliases:
+          - login   
+
+  wheverservice:
+    build: login/
+    networks:
+      internal_routes:
+        aliases:
+          - login  
+  
   create_user:
     build: create_user/
     ports:
       - "5000:5000" 
     networks:
       internal_routes:
+        aliases:
+          - create_user
 
   list_user:
     container_name: api_luser
