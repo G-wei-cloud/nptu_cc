@@ -6,7 +6,7 @@ $ sudo apt-get install git
 
 ### Use git clone this program:
 ```sh
-# git clone https://github.com/G-wei-cloud/nptu_cc 
+# git clone https://github.com/G-wei-cloud/nptu_cc.git 
 ```
 
 ### check if the file different:
@@ -35,19 +35,28 @@ $ sudo apt-get install git
 $ docker-compose up -d
 ```
 
+### Rebuild specific service:
+```sh
+$ docker-compose up -d --no-deps --build <server name>
+```
+
 ### restart service:
 ```sh
 $ docker-compose restart
+or
+$ docker-compose restart <server name>
 ```
 
 ### check all container:
 ```sh
-$ docker ps or $ docker ps -a
+$ docker ps
+or
+$ docker ps -a
 ```
 
 ### stop container:
 ```sh
-$ docker stop insert-mongodb
+$ docker stop <server name>
 ```
 
 ### Stop service:
